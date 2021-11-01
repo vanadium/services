@@ -13,7 +13,7 @@ import (
 
 	"v.io/v23/security"
 	"v.io/v23/vom"
-	"v.io/x/ref/services/identity/internal/util"
+	"github.com/vanadium/services/identity/internal/util"
 )
 
 // BlessingRoot is an http.Handler implementation that renders the server's

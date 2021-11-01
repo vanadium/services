@@ -15,12 +15,12 @@ import (
 
 	"v.io/x/lib/gosh"
 	"v.io/x/ref/lib/signals"
-	"v.io/x/ref/services/identity/internal/auditor"
-	"v.io/x/ref/services/identity/internal/caveats"
-	"v.io/x/ref/services/identity/internal/oauth"
-	"v.io/x/ref/services/identity/internal/revocation"
-	"v.io/x/ref/services/identity/internal/server"
-	"v.io/x/ref/services/identity/internal/util"
+	"github.com/vanadium/services/identity/internal/auditor"
+	"github.com/vanadium/services/identity/internal/caveats"
+	"github.com/vanadium/services/identity/internal/oauth"
+	"github.com/vanadium/services/identity/internal/revocation"
+	"github.com/vanadium/services/identity/internal/server"
+	"github.com/vanadium/services/identity/internal/util"
 	"v.io/x/ref/test"
 )
 

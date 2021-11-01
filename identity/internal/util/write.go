@@ -9,7 +9,7 @@ import (
 	"html/template"
 	"net/http"
 
-	"v.io/x/ref/internal/logger"
+	"github.com/vanadium/services/internal/logger"
 )
 
 // HTTPBadRequest sends an HTTP 400 error on 'w' and renders a pretty page.

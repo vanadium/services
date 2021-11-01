@@ -8,8 +8,7 @@ import (
 	"fmt"
 	"time"
 
-	"v.io/x/ref/services/identity/internal/revocation"
-
+	"github.com/vanadium/services/identity/internal/revocation"
 	"v.io/v23/security"
 )
 

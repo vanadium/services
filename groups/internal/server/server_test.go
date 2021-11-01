@@ -21,9 +21,9 @@ import (
 	"v.io/v23/services/groups"
 	"v.io/v23/verror"
 	_ "v.io/x/ref/runtime/factories/generic"
-	"v.io/x/ref/services/groups/internal/server"
-	"v.io/x/ref/services/groups/internal/store"
-	"v.io/x/ref/services/groups/internal/store/mem"
+	"github.com/vanadium/services/groups/internal/server"
+	"github.com/vanadium/services/groups/internal/store"
+	"github.com/vanadium/services/groups/internal/store/mem"
 	"v.io/x/ref/test"
 	"v.io/x/ref/test/testutil"
 )

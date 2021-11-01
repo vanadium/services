@@ -12,7 +12,7 @@ import (
 	s_vtrace "v.io/v23/services/vtrace"
 	"v.io/v23/vtrace"
 	_ "v.io/x/ref/runtime/factories/generic"
-	"v.io/x/ref/services/internal/vtracelib"
+	"github.com/vanadium/services/internal/vtracelib"
 	"v.io/x/ref/test"
 )
 

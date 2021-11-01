@@ -21,7 +21,7 @@ import (
 	libstats "v.io/x/ref/lib/stats"
 	"v.io/x/ref/lib/stats/histogram"
 	_ "v.io/x/ref/runtime/factories/generic"
-	"v.io/x/ref/services/internal/statslib"
+	"github.com/vanadium/services/internal/statslib"
 	s_stats "v.io/x/ref/services/stats"
 	"v.io/x/ref/test"
 	"v.io/x/ref/test/testutil"

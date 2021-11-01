@@ -11,7 +11,7 @@ import (
 	"v.io/v23/rpc"
 	"v.io/v23/security"
 	"v.io/v23/services/groups"
-	"v.io/x/ref/services/groups/internal/store"
+	"github.com/vanadium/services/groups/internal/store"
 )
 
 type manager struct {

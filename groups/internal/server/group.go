@@ -11,6 +11,7 @@ package server
 import (
 	"errors"
 
+	"github.com/vanadium/services/groups/internal/store"
 	"v.io/v23/context"
 	"v.io/v23/rpc"
 	"v.io/v23/security"
@@ -18,7 +19,6 @@ import (
 	"v.io/v23/services/groups"
 	"v.io/v23/verror"
 	"v.io/x/lib/set"
-	"v.io/x/ref/services/groups/internal/store"
 )
 
 type group struct {

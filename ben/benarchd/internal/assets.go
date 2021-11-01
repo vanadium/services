@@ -13,7 +13,7 @@ import (
 	"reflect"
 	"strings"
 
-	"v.io/x/ref/services/ben/benarchd/internal/assets"
+	"github.com/vanadium/services/ben/benarchd/internal/assets"
 )
 
 // NewAssets returns an object that provides compiled-in assets if dir is empty

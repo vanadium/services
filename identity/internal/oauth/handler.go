@@ -37,11 +37,11 @@ import (
 	"v.io/v23/context"
 	"v.io/v23/security"
 	"v.io/v23/vom"
-	"v.io/x/ref/services/identity/internal/auditor"
-	"v.io/x/ref/services/identity/internal/caveats"
-	"v.io/x/ref/services/identity/internal/revocation"
-	"v.io/x/ref/services/identity/internal/templates"
-	"v.io/x/ref/services/identity/internal/util"
+	"github.com/vanadium/services/identity/internal/auditor"
+	"github.com/vanadium/services/identity/internal/caveats"
+	"github.com/vanadium/services/identity/internal/revocation"
+	"github.com/vanadium/services/identity/internal/templates"
+	"github.com/vanadium/services/identity/internal/util"
 )
 
 const (

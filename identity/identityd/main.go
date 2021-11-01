@@ -24,14 +24,14 @@ import (
 	vsecurity "v.io/x/ref/lib/security"
 	"v.io/x/ref/lib/v23cmd"
 	_ "v.io/x/ref/runtime/factories/roaming"
-	"v.io/x/ref/services/identity/internal/auditor"
-	"v.io/x/ref/services/identity/internal/caveats"
-	"v.io/x/ref/services/identity/internal/handlers"
-	"v.io/x/ref/services/identity/internal/oauth"
-	"v.io/x/ref/services/identity/internal/revocation"
-	"v.io/x/ref/services/identity/internal/server"
-	"v.io/x/ref/services/internal/dbutil"
-	"v.io/x/ref/services/internal/restsigner"
+	"github.com/vanadium/services/identity/internal/auditor"
+	"github.com/vanadium/services/identity/internal/caveats"
+	"github.com/vanadium/services/identity/internal/handlers"
+	"github.com/vanadium/services/identity/internal/oauth"
+	"github.com/vanadium/services/identity/internal/revocation"
+	"github.com/vanadium/services/identity/internal/server"
+	"github.com/vanadium/services/internal/dbutil"
+	"github.com/vanadium/services/internal/restsigner"
 )
 
 var (

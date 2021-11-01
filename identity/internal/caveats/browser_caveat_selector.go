@@ -10,8 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"v.io/x/ref/services/identity/internal/templates"
-
+	"github.com/vanadium/services/identity/internal/templates"
 	"v.io/v23/security"
 )
 

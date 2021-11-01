@@ -19,9 +19,9 @@ import (
 	"v.io/v23/vom"
 	"v.io/x/ref/lib/stats"
 	"v.io/x/ref/lib/stats/counter"
-	"v.io/x/ref/services/identity/internal/oauth"
-	"v.io/x/ref/services/identity/internal/revocation"
-	"v.io/x/ref/services/identity/internal/util"
+	"github.com/vanadium/services/identity/internal/oauth"
+	"github.com/vanadium/services/identity/internal/revocation"
+	"github.com/vanadium/services/identity/internal/util"
 )
 
 const (

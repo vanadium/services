@@ -13,8 +13,7 @@ import (
 	"testing"
 
 	"v.io/x/lib/gosh"
-
-	"v.io/x/ref/services/internal/dirprinter"
+	"github.com/vanadium/services/internal/dirprinter"
 )
 
 func TestDumpDir(t *testing.T) {

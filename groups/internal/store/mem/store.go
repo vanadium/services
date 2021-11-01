@@ -11,9 +11,9 @@ import (
 	"strconv"
 	"sync"
 
+	"github.com/vanadium/services/groups/internal/store"
 	"v.io/v23/vdl"
 	"v.io/v23/verror"
-	"v.io/x/ref/services/groups/internal/store"
 )
 
 type entry struct {

@@ -15,7 +15,7 @@ import (
 	"v.io/v23/context"
 	"v.io/v23/security"
 	_ "v.io/x/ref/runtime/factories/generic"
-	"v.io/x/ref/services/internal/pproflib"
+	"github.com/vanadium/services/internal/pproflib"
 	"v.io/x/ref/test"
 )
 

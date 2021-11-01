@@ -23,9 +23,9 @@ import (
 	"v.io/v23/vom"
 
 	_ "v.io/x/ref/runtime/factories/generic"
-	"v.io/x/ref/services/identity"
-	"v.io/x/ref/services/identity/internal/oauth"
-	"v.io/x/ref/services/identity/internal/revocation"
+	"github.com/vanadium/services/identity"
+	"github.com/vanadium/services/identity/internal/oauth"
+	"github.com/vanadium/services/identity/internal/revocation"
 	"v.io/x/ref/test"
 	"v.io/x/ref/test/testutil"
 )

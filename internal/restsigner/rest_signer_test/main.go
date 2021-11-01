@@ -12,7 +12,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"v.io/x/ref/services/internal/restsigner"
+	"github.com/vanadium/services/internal/restsigner"
 )
 
 func main() {

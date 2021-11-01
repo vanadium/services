@@ -8,12 +8,12 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/vanadium/services/groups/internal/server"
+	"github.com/vanadium/services/groups/internal/store/mem"
 	"v.io/v23/context"
 	"v.io/v23/conventions"
 	"v.io/v23/rpc"
 	"v.io/v23/security"
-	"v.io/x/ref/services/groups/internal/server"
-	"v.io/x/ref/services/groups/internal/store/mem"
 )
 
 // Authorizer implementing the authorization policy for Create operations.

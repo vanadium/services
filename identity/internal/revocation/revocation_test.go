@@ -11,8 +11,8 @@ import (
 	"v.io/v23/context"
 	"v.io/v23/security"
 	_ "v.io/x/ref/runtime/factories/generic"
-	"v.io/x/ref/services/discharger"
-	"v.io/x/ref/services/identity/internal/dischargerlib"
+	"github.com/vanadium/services/discharger"
+	"github.com/vanadium/services/identity/internal/dischargerlib"
 	"v.io/x/ref/test"
 )
 

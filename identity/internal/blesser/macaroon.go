@@ -10,10 +10,9 @@ import (
 	"reflect"
 	"time"
 
-	"v.io/x/ref/services/identity"
-	"v.io/x/ref/services/identity/internal/oauth"
-	"v.io/x/ref/services/identity/internal/util"
-
+	"github.com/vanadium/services/identity"
+	"github.com/vanadium/services/identity/internal/oauth"
+	"github.com/vanadium/services/identity/internal/util"
 	v23 "v.io/v23"
 	"v.io/v23/context"
 	"v.io/v23/rpc"

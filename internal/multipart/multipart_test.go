@@ -14,7 +14,7 @@ import (
 	"strings"
 	"testing"
 
-	"v.io/x/ref/services/internal/multipart"
+	"github.com/vanadium/services/internal/multipart"
 )
 
 func read(t *testing.T, m http.File, thisMuch int) string {
