@@ -11,11 +11,11 @@ import (
 	"net/http"
 	"testing"
 
+	"github.com/vanadium/services/internal/pproflib"
 	v23 "v.io/v23"
 	"v.io/v23/context"
 	"v.io/v23/security"
 	_ "v.io/x/ref/runtime/factories/generic"
-	"github.com/vanadium/services/internal/pproflib"
 	"v.io/x/ref/test"
 )
 

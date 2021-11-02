@@ -12,6 +12,8 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/vanadium/services/role"
+	irole "github.com/vanadium/services/role/roled/internal"
 	v23 "v.io/v23"
 	"v.io/v23/context"
 	"v.io/v23/naming"
@@ -20,8 +22,6 @@ import (
 	"v.io/v23/verror"
 	vsecurity "v.io/x/ref/lib/security"
 	_ "v.io/x/ref/runtime/factories/generic"
-	"github.com/vanadium/services/role"
-	irole "github.com/vanadium/services/role/roled/internal"
 	"v.io/x/ref/test"
 	"v.io/x/ref/test/testutil"
 )

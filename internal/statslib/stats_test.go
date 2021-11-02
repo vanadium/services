@@ -10,6 +10,7 @@ import (
 	"testing"
 	"time"
 
+	"github.com/vanadium/services/internal/statslib"
 	v23 "v.io/v23"
 	"v.io/v23/context"
 	"v.io/v23/naming"
@@ -21,7 +22,6 @@ import (
 	libstats "v.io/x/ref/lib/stats"
 	"v.io/x/ref/lib/stats/histogram"
 	_ "v.io/x/ref/runtime/factories/generic"
-	"github.com/vanadium/services/internal/statslib"
 	s_stats "v.io/x/ref/services/stats"
 	"v.io/x/ref/test"
 	"v.io/x/ref/test/testutil"

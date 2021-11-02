@@ -12,8 +12,8 @@ import (
 	"regexp"
 	"testing"
 
-	"v.io/x/lib/gosh"
 	"github.com/vanadium/services/internal/dirprinter"
+	"v.io/x/lib/gosh"
 )
 
 func TestDumpDir(t *testing.T) {

@@ -13,6 +13,8 @@ import (
 	"fmt"
 	"io/ioutil"
 
+	"github.com/vanadium/services/internal/restsigner"
+	irole "github.com/vanadium/services/role/roled/internal"
 	v23 "v.io/v23"
 	"v.io/v23/context"
 	"v.io/v23/security"
@@ -22,8 +24,6 @@ import (
 	"v.io/x/ref/lib/signals"
 	"v.io/x/ref/lib/v23cmd"
 	_ "v.io/x/ref/runtime/factories/roaming"
-	"github.com/vanadium/services/internal/restsigner"
-	irole "github.com/vanadium/services/role/roled/internal"
 )
 
 var (

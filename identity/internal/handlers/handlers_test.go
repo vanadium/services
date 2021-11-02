@@ -22,10 +22,10 @@ import (
 	"v.io/v23/security"
 	"v.io/v23/vom"
 
-	_ "v.io/x/ref/runtime/factories/generic"
 	"github.com/vanadium/services/identity"
 	"github.com/vanadium/services/identity/internal/oauth"
 	"github.com/vanadium/services/identity/internal/revocation"
+	_ "v.io/x/ref/runtime/factories/generic"
 	"v.io/x/ref/test"
 	"v.io/x/ref/test/testutil"
 )

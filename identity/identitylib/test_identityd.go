@@ -13,14 +13,14 @@ import (
 	"strconv"
 	"time"
 
-	"v.io/x/lib/gosh"
-	"v.io/x/ref/lib/signals"
 	"github.com/vanadium/services/identity/internal/auditor"
 	"github.com/vanadium/services/identity/internal/caveats"
 	"github.com/vanadium/services/identity/internal/oauth"
 	"github.com/vanadium/services/identity/internal/revocation"
 	"github.com/vanadium/services/identity/internal/server"
 	"github.com/vanadium/services/identity/internal/util"
+	"v.io/x/lib/gosh"
+	"v.io/x/ref/lib/signals"
 	"v.io/x/ref/test"
 )
 

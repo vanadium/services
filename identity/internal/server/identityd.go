@@ -15,14 +15,6 @@ import (
 	"syscall"
 	"time"
 
-	v23 "v.io/v23"
-	"v.io/v23/context"
-	"v.io/v23/naming"
-	"v.io/v23/rpc"
-	"v.io/v23/security"
-	"v.io/v23/verror"
-	"v.io/x/ref/lib/security/audit"
-	"v.io/x/ref/lib/signals"
 	"github.com/vanadium/services/discharger"
 	"github.com/vanadium/services/identity/internal/auditor"
 	"github.com/vanadium/services/identity/internal/blesser"
@@ -32,6 +24,14 @@ import (
 	"github.com/vanadium/services/identity/internal/oauth"
 	"github.com/vanadium/services/identity/internal/revocation"
 	"github.com/vanadium/services/identity/internal/templates"
+	v23 "v.io/v23"
+	"v.io/v23/context"
+	"v.io/v23/naming"
+	"v.io/v23/rpc"
+	"v.io/v23/security"
+	"v.io/v23/verror"
+	"v.io/x/ref/lib/security/audit"
+	"v.io/x/ref/lib/signals"
 )
 
 const (

@@ -13,12 +13,6 @@ import (
 	"net"
 	"time"
 
-	v23 "v.io/v23"
-	"v.io/v23/context"
-	"v.io/x/lib/cmdline"
-	"v.io/x/ref/lib/security"
-	"v.io/x/ref/lib/v23cmd"
-	_ "v.io/x/ref/runtime/factories/roaming"
 	"github.com/vanadium/services/identity/internal/auditor"
 	"github.com/vanadium/services/identity/internal/caveats"
 	"github.com/vanadium/services/identity/internal/oauth"
@@ -26,6 +20,12 @@ import (
 	"github.com/vanadium/services/identity/internal/server"
 	"github.com/vanadium/services/identity/internal/util"
 	"github.com/vanadium/services/internal/restsigner"
+	v23 "v.io/v23"
+	"v.io/v23/context"
+	"v.io/x/lib/cmdline"
+	"v.io/x/ref/lib/security"
+	"v.io/x/ref/lib/v23cmd"
+	_ "v.io/x/ref/runtime/factories/roaming"
 )
 
 var (

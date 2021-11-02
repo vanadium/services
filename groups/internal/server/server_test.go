@@ -13,6 +13,9 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/vanadium/services/groups/internal/server"
+	"github.com/vanadium/services/groups/internal/store"
+	"github.com/vanadium/services/groups/internal/store/mem"
 	v23 "v.io/v23"
 	"v.io/v23/context"
 	"v.io/v23/naming"
@@ -21,9 +24,6 @@ import (
 	"v.io/v23/services/groups"
 	"v.io/v23/verror"
 	_ "v.io/x/ref/runtime/factories/generic"
-	"github.com/vanadium/services/groups/internal/server"
-	"github.com/vanadium/services/groups/internal/store"
-	"github.com/vanadium/services/groups/internal/store/mem"
 	"v.io/x/ref/test"
 	"v.io/x/ref/test/testutil"
 )

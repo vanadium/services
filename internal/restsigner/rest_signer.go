@@ -12,10 +12,10 @@ import (
 	"fmt"
 	"math/big"
 
+	signer "github.com/vanadium/services/internal/restsigner/signer/v1"
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/google"
 	"v.io/v23/security"
-	signer "github.com/vanadium/services/internal/restsigner/signer/v1"
 )
 
 func DecodePublicKey(k *signer.PublicKey) (*ecdsa.PublicKey, error) {

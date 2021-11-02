@@ -7,11 +7,11 @@ package server
 import (
 	"strings"
 
+	"github.com/vanadium/services/groups/internal/store"
 	"v.io/v23/context"
 	"v.io/v23/rpc"
 	"v.io/v23/security"
 	"v.io/v23/services/groups"
-	"github.com/vanadium/services/groups/internal/store"
 )
 
 type manager struct {

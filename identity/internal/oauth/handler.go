@@ -33,15 +33,15 @@ import (
 	"strings"
 	"time"
 
-	v23 "v.io/v23"
-	"v.io/v23/context"
-	"v.io/v23/security"
-	"v.io/v23/vom"
 	"github.com/vanadium/services/identity/internal/auditor"
 	"github.com/vanadium/services/identity/internal/caveats"
 	"github.com/vanadium/services/identity/internal/revocation"
 	"github.com/vanadium/services/identity/internal/templates"
 	"github.com/vanadium/services/identity/internal/util"
+	v23 "v.io/v23"
+	"v.io/v23/context"
+	"v.io/v23/security"
+	"v.io/v23/vom"
 )
 
 const (

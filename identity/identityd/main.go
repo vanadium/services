@@ -16,14 +16,6 @@ import (
 	"io/ioutil"
 	"os"
 
-	v23 "v.io/v23"
-	"v.io/v23/context"
-	"v.io/v23/security"
-	"v.io/v23/vom"
-	"v.io/x/lib/cmdline"
-	vsecurity "v.io/x/ref/lib/security"
-	"v.io/x/ref/lib/v23cmd"
-	_ "v.io/x/ref/runtime/factories/roaming"
 	"github.com/vanadium/services/identity/internal/auditor"
 	"github.com/vanadium/services/identity/internal/caveats"
 	"github.com/vanadium/services/identity/internal/handlers"
@@ -32,6 +24,14 @@ import (
 	"github.com/vanadium/services/identity/internal/server"
 	"github.com/vanadium/services/internal/dbutil"
 	"github.com/vanadium/services/internal/restsigner"
+	v23 "v.io/v23"
+	"v.io/v23/context"
+	"v.io/v23/security"
+	"v.io/v23/vom"
+	"v.io/x/lib/cmdline"
+	vsecurity "v.io/x/ref/lib/security"
+	"v.io/x/ref/lib/v23cmd"
+	_ "v.io/x/ref/runtime/factories/roaming"
 )
 
 var (

@@ -8,9 +8,9 @@ import (
 	"math/big"
 	"testing"
 
-	"v.io/v23/security"
 	"github.com/vanadium/services/internal/restsigner"
 	signer "github.com/vanadium/services/internal/restsigner/signer/v1"
+	"v.io/v23/security"
 )
 
 func TestDecode(t *testing.T) {

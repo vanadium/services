@@ -14,6 +14,7 @@ import (
 	"path"
 	"testing"
 
+	"github.com/vanadium/services/internal/logreaderlib"
 	v23 "v.io/v23"
 	"v.io/v23/context"
 	"v.io/v23/naming"
@@ -21,7 +22,6 @@ import (
 	"v.io/v23/services/logreader"
 	"v.io/v23/verror"
 	_ "v.io/x/ref/runtime/factories/generic"
-	"github.com/vanadium/services/internal/logreaderlib"
 	"v.io/x/ref/test"
 )
 

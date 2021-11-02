@@ -13,15 +13,15 @@ import (
 	"sync"
 	"time"
 
+	"github.com/vanadium/services/identity/internal/oauth"
+	"github.com/vanadium/services/identity/internal/revocation"
+	"github.com/vanadium/services/identity/internal/util"
 	v23 "v.io/v23"
 	"v.io/v23/context"
 	"v.io/v23/security"
 	"v.io/v23/vom"
 	"v.io/x/ref/lib/stats"
 	"v.io/x/ref/lib/stats/counter"
-	"github.com/vanadium/services/identity/internal/oauth"
-	"github.com/vanadium/services/identity/internal/revocation"
-	"github.com/vanadium/services/identity/internal/util"
 )
 
 const (

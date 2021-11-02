@@ -8,11 +8,11 @@ import (
 	"io"
 	"testing"
 
+	"github.com/vanadium/services/internal/vtracelib"
 	v23 "v.io/v23"
 	s_vtrace "v.io/v23/services/vtrace"
 	"v.io/v23/vtrace"
 	_ "v.io/x/ref/runtime/factories/generic"
-	"github.com/vanadium/services/internal/vtracelib"
 	"v.io/x/ref/test"
 )
 
