@@ -16,8 +16,8 @@ import (
 	"v.io/v23/security"
 	"v.io/v23/verror"
 
-	"github.com/vanadium/services/internal/logger"
 	"github.com/vanadium/services/discharger"
+	"github.com/vanadium/services/internal/logger"
 	"github.com/vanadium/services/role"
 )
 

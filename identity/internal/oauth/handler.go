@@ -6,19 +6,22 @@
 // listed below:
 //
 // (1) Uses OAuth to authenticate and then renders a page that
-//     displays all the blessings that were provided for that Google user.
-//     The client calls the /listblessings route which redirects to listblessingscallback which
-//     renders the list.
+//
+//	displays all the blessings that were provided for that Google user.
+//	The client calls the /listblessings route which redirects to listblessingscallback which
+//	renders the list.
+//
 // (2) Performs the oauth flow for seeking a blessing using the principal tool
-//     located at v.io/x/ref/cmd/principal.
-//     The seek blessing flow works as follows:
-//     (a) Client (principal tool) hits the /seekblessings route.
-//     (b) /seekblessings performs oauth with a redirect to /seekblessingscallback.
-//     (c) Client specifies desired caveats in the form that /seekblessingscallback displays.
-//     (d) Submission of the form sends caveat information to /sendmacaroon.
-//     (e) /sendmacaroon sends a macaroon with blessing information to client
-//         (via a redirect to an HTTP server run by the tool).
-//     (f) Client invokes bless rpc with macaroon.
+//
+//	located at v.io/x/ref/cmd/principal.
+//	The seek blessing flow works as follows:
+//	(a) Client (principal tool) hits the /seekblessings route.
+//	(b) /seekblessings performs oauth with a redirect to /seekblessingscallback.
+//	(c) Client specifies desired caveats in the form that /seekblessingscallback displays.
+//	(d) Submission of the form sends caveat information to /sendmacaroon.
+//	(e) /sendmacaroon sends a macaroon with blessing information to client
+//	    (via a redirect to an HTTP server run by the tool).
+//	(f) Client invokes bless rpc with macaroon.
 package oauth
 
 import (

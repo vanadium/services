@@ -78,8 +78,8 @@ func capitalize(s string) string {
 	if s == "" {
 		return ""
 	}
-	rune, size := utf8.DecodeRuneInString(s)
-	return string(unicode.ToUpper(rune)) + s[size:]
+	r, size := utf8.DecodeRuneInString(s)
+	return string(unicode.ToUpper(r)) + s[size:]
 }
 
 func startServer(ctx *context.T, t *testing.T) (rpc.Server, naming.Endpoint) {

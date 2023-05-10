@@ -11,10 +11,10 @@
 package archive
 
 import (
+	"github.com/vanadium/services/ben"
 	v23 "v.io/v23"
 	"v.io/v23/context"
 	"v.io/v23/rpc"
-	"github.com/vanadium/services/ben"
 )
 
 var initializeVDLCalled = false

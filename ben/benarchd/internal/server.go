@@ -10,12 +10,12 @@ import (
 	"strings"
 	"time"
 
+	"github.com/vanadium/services/ben"
+	"github.com/vanadium/services/ben/archive"
 	"v.io/v23/context"
 	"v.io/v23/rpc"
 	"v.io/v23/security"
 	"v.io/v23/verror"
-	"github.com/vanadium/services/ben"
-	"github.com/vanadium/services/ben/archive"
 )
 
 // NewArchiver returns an archive.BenchmarkArchiver server that uses

@@ -80,13 +80,13 @@ type accessTokenBlesser struct {
 // expires after the duration specified by the params.
 //
 // The handler expects the following request parameters:
-// - "public_key": Base64 DER encoded PKIX representation of the client's public key
-// - "caveats": Base64 VOM encoded list of caveats [OPTIONAL]
-// - "token": Google OAuth2 Access token
-// - "output_format": The encoding format for the returned blessings. The following
-//   formats are supported:
-//     - "json": JSON-encoding of the wire format of Blessings.
-//     - "base64vom": Base64URL encoding of VOM-encoded Blessings [DEFAULT]
+//   - "public_key": Base64 DER encoded PKIX representation of the client's public key
+//   - "caveats": Base64 VOM encoded list of caveats [OPTIONAL]
+//   - "token": Google OAuth2 Access token
+//   - "output_format": The encoding format for the returned blessings. The following
+//     formats are supported:
+//   - "json": JSON-encoding of the wire format of Blessings.
+//   - "base64vom": Base64URL encoding of VOM-encoded Blessings [DEFAULT]
 //
 // The response consists of blessings encoded in the requested output format.
 //
@@ -94,6 +94,7 @@ type accessTokenBlesser struct {
 //   - There is no binding between the channel over which the access token
 //     was obtained and the channel used to make this request.
 //   - There is no "proof of possession of private key" required by the server.
+//
 // Thus, if Mallory (attacker) possesses the access token associated with Alice's
 // account (victim), she may be able to obtain a blessing with Alice's name on it
 // for any public key of her choice.

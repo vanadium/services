@@ -21,6 +21,7 @@ var _ = initializeVDL() // Must be first; see initializeVDL comments for details
 // Declare and initialize with default values here so that the initializeVDL
 // method will be considered ready to initialize before any of the type
 // definitions that appear below.
+//
 //nolint:unused
 var (
 	vdlTypeStruct1 *vdl.Type = nil
@@ -161,7 +162,7 @@ func vdlReadAnonSet1(dec vdl.Decoder, x *map[groups.BlessingPatternChunk]struct{
 // If you have an init ordering issue, just insert the following line verbatim
 // into your source files in this package, right after the "package foo" clause:
 //
-//    var _ = initializeVDL()
+//	var _ = initializeVDL()
 //
 // The purpose of this function is to ensure that vdl initialization occurs in
 // the right order, and very early in the init sequence.  In particular, vdl
