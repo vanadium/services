@@ -13,7 +13,7 @@ import (
 	"v.io/v23/rpc"
 	"v.io/v23/security"
 
-	"v.io/x/ref/services/discharger"
+	"github.com/vanadium/services/discharger"
 )
 
 func init() {

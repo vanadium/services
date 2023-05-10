@@ -85,7 +85,17 @@ func runIdentityDTest(ctx *context.T, env *cmdline.Env, args []string) error { /
 		if err != nil {
 			return fmt.Errorf("failed to create remote signer: %v", err)
 		}
-		p, err := security.NewPrincipalFromSignerAndState(signer, remoteSignerBlessings)
+
+		rd := security.FilesystemStoreReader(remoteSignerBlessings)
+		store, err := security.NewBlessingStoreOpts(ctx,
+			signer.PublicKey(),
+			security.BlessingStoreReadonly(rd, signer.PublicKey()))
+		if err != nil {
+			return fmt.Errorf("failed to create principal: %v", err)
+		}
+		p, err := security.CreatePrincipalOpts(ctx,
+			security.WithSigner(signer),
+			security.WithBlessingStore(store))
 		if err != nil {
 			return fmt.Errorf("failed to create principal: %v", err)
 		}
@@ -100,7 +110,16 @@ func runIdentityDTest(ctx *context.T, env *cmdline.Env, args []string) error { /
 		if err != nil {
 			return fmt.Errorf("failed to create remote signer: %v", err)
 		}
-		p, err := security.NewPrincipalFromSignerAndState(signer, oauthRemoteSignerBlessings)
+		rd := security.FilesystemStoreReader(oauthRemoteSignerBlessings)
+		store, err := security.NewBlessingStoreOpts(ctx,
+			signer.PublicKey(),
+			security.BlessingStoreReadonly(rd, signer.PublicKey()))
+		if err != nil {
+			return fmt.Errorf("failed to create principal: %v", err)
+		}
+		p, err := security.CreatePrincipalOpts(ctx,
+			security.WithSigner(signer),
+			security.WithBlessingStore(store))
 		if err != nil {
 			return fmt.Errorf("failed to create principal: %v", err)
 		}
