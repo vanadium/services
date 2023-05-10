@@ -11,7 +11,7 @@ import (
 	"unicode"
 
 	"v.io/v23/context"
-	"v.io/x/ref/services/ben"
+	"github.com/vanadium/services/ben"
 )
 
 type Store interface {

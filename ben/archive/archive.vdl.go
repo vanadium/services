@@ -6,6 +6,7 @@
 // Package: archive
 
 // Package archive defines the RPC interface for archiving benchmark results.
+//
 //nolint:revive
 package archive
 
@@ -13,7 +14,7 @@ import (
 	v23 "v.io/v23"
 	"v.io/v23/context"
 	"v.io/v23/rpc"
-	"v.io/x/ref/services/ben"
+	"github.com/vanadium/services/ben"
 )
 
 var initializeVDLCalled = false
@@ -147,7 +148,7 @@ var descBenchmarkArchiver = rpc.InterfaceDesc{
 // If you have an init ordering issue, just insert the following line verbatim
 // into your source files in this package, right after the "package foo" clause:
 //
-//    var _ = initializeVDL()
+//	var _ = initializeVDL()
 //
 // The purpose of this function is to ensure that vdl initialization occurs in
 // the right order, and very early in the init sequence.  In particular, vdl

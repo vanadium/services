@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"v.io/x/ref/services/ben"
+	"github.com/vanadium/services/ben"
 )
 
 // NewHTTPHandler returns a handler that provides web interface for browsing

@@ -16,7 +16,7 @@ import (
 	"v.io/v23/security"
 	"v.io/v23/verror"
 
-	"v.io/x/ref/services/role"
+	"github.com/vanadium/services/role"
 )
 
 type roleService struct {

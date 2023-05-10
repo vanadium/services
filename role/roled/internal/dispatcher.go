@@ -17,8 +17,8 @@ import (
 	"v.io/v23/verror"
 
 	"github.com/vanadium/services/internal/logger"
-	"v.io/x/ref/services/discharger"
-	"v.io/x/ref/services/role"
+	"github.com/vanadium/services/discharger"
+	"github.com/vanadium/services/role"
 )
 
 func useOrCreateErrInternal(ctx *context.T, err error) error {
