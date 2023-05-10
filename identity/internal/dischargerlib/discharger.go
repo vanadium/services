@@ -8,10 +8,10 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/vanadium/services/discharger"
 	"v.io/v23/context"
 	"v.io/v23/rpc"
 	"v.io/v23/security"
-	"github.com/vanadium/services/discharger"
 )
 
 const dischargeExpiryTime = 15 * time.Hour

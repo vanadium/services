@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"v.io/v23/context"
 	"github.com/vanadium/services/ben"
+	"v.io/v23/context"
 )
 
 const driverSqlite3 = "sqlite3"

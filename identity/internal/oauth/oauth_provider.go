@@ -14,6 +14,7 @@ const (
 )
 
 // OAuthProvider authenticates users to the identity server via the OAuth2 Web Server flow.
+//
 //nolint:revive // API change required.
 type OAuthProvider interface {
 	// AuthURL is the URL the user must visit in order to authenticate with the OAuthProvider.

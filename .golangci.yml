@@ -2,17 +2,17 @@ run:
   timeout: 5m
   issues-exit-code: 1
   tests: true
-  build-tags:
-  skip-dirs:
-    - internal/restsigner/signer
 
 linters-settings:
   gocyclo:
     min-complexity: 15
+  revive:
+    rules:
+      - name: unused-parameter
+        disabled: true
 
 linters:
   enable:
-    - deadcode
     - gocritic
     - gocyclo
     - gofmt
@@ -24,8 +24,6 @@ linters:
     - misspell
     - exportloopref
     - staticcheck
-    - structcheck
     - typecheck
     - unconvert
-    - varcheck
-  disable-all: true
+    - unused

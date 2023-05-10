@@ -12,13 +12,13 @@ package main
 import (
 	"fmt"
 
+	"github.com/vanadium/services/groups/lib"
 	v23 "v.io/v23"
 	"v.io/v23/context"
 	"v.io/x/lib/cmdline"
 	"v.io/x/ref/lib/signals"
 	"v.io/x/ref/lib/v23cmd"
 	_ "v.io/x/ref/runtime/factories/roaming"
-	"github.com/vanadium/services/groups/lib"
 )
 
 var (

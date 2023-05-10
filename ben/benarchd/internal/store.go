@@ -10,8 +10,8 @@ import (
 	"time"
 	"unicode"
 
-	"v.io/v23/context"
 	"github.com/vanadium/services/ben"
+	"v.io/v23/context"
 )
 
 type Store interface {
